@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		203919E52663BE63000C89F4 /* LiveBagdeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203919E42663BE63000C89F4 /* LiveBagdeView.swift */; };
+		209241A5266459DA00CF7A86 /* kariCareConstantCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209241A4266459DA00CF7A86 /* kariCareConstantCheck.swift */; };
+		20C0B7E42662780E00D8FB10 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E32662780E00D8FB10 /* HomeHeaderView.swift */; };
+		20C0B7E726627C1A00D8FB10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E626627C1A00D8FB10 /* HomeViewModel.swift */; };
+		20C0B7EA2662854300D8FB10 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E92662854300D8FB10 /* StoryCell.swift */; };
+		20C0B7EC2662B74E00D8FB10 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7EB2662B74E00D8FB10 /* FeedCell.swift */; };
+		20EAEE8A26616AAE00F1ADA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEE8926616AAE00F1ADA8 /* AppDelegate.swift */; };
+		20EAEE8C26616AAE00F1ADA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEE8B26616AAE00F1ADA8 /* SceneDelegate.swift */; };
+		20EAEE8E26616AAE00F1ADA8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEE8D26616AAE00F1ADA8 /* HomeViewController.swift */; };
+		20EAEE9326616AB200F1ADA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EAEE9226616AB200F1ADA8 /* Assets.xcassets */; };
+		20EAEE9626616AB200F1ADA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAEE9426616AB200F1ADA8 /* LaunchScreen.storyboard */; };
+		20EAEEA126616AB200F1ADA8 /* kariCare_iosAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEA026616AB200F1ADA8 /* kariCare_iosAPITest.swift */; };
+		20EAEEAC26616AB200F1ADA8 /* kariCare_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEAB26616AB200F1ADA8 /* kariCare_iosUITests.swift */; };
+		20EAEEC026616F4600F1ADA8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEBF26616F4600F1ADA8 /* NetworkManager.swift */; };
+		20EAEEC326616F9700F1ADA8 /* CustomHttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEC226616F9700F1ADA8 /* CustomHttpError.swift */; };
+		20EAEEC526616FBA00F1ADA8 /* UnknownError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEC426616FBA00F1ADA8 /* UnknownError.swift */; };
+		20EAEEC726616FD000F1ADA8 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEC626616FD000F1ADA8 /* Decoder.swift */; };
+		20EAEEC92661702900F1ADA8 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEC82661702900F1ADA8 /* RequestType.swift */; };
+		20EAEECC266170DB00F1ADA8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEECB266170DB00F1ADA8 /* UIView+Layout.swift */; };
+		20EAEECE266170FD00F1ADA8 /* StackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEECD266170FD00F1ADA8 /* StackView+Extension.swift */; };
+		20EAEED02661712700F1ADA8 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEECF2661712700F1ADA8 /* UICollectionView+Extension.swift */; };
+		20EAEED32661716100F1ADA8 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEED22661716100F1ADA8 /* ReusableView.swift */; };
+		20EAEED62661722200F1ADA8 /* DataFetchedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEED52661722200F1ADA8 /* DataFetchedDelegate.swift */; };
+		20EAEED82661724800F1ADA8 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEED72661724800F1ADA8 /* WebService.swift */; };
+		20EAEEDA26617C1500F1ADA8 /* TabBarMenuBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEED926617C1500F1ADA8 /* TabBarMenuBaseController.swift */; };
+		20EAEEDE26617F0400F1ADA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEDD26617F0400F1ADA8 /* Constants.swift */; };
+		20EAEEE22661819E00F1ADA8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEE12661819E00F1ADA8 /* ProfileViewController.swift */; };
+		20EAEEEB266187EE00F1ADA8 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEA266187EE00F1ADA8 /* ProfileHeaderView.swift */; };
+		20EAEEED26618EC600F1ADA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEC26618EC600F1ADA8 /* Extensions.swift */; };
+		20EAEEF02661B9FC00F1ADA8 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEF2661B9FC00F1ADA8 /* TabItem.swift */; };
+		20EAEEF42661D82C00F1ADA8 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEF32661D82C00F1ADA8 /* ResponseModel.swift */; };
+		20EAEEF62661DAB900F1ADA8 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEF52661DAB900F1ADA8 /* ApiServices.swift */; };
+		20EAEEF92661DD4A00F1ADA8 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEF82661DD4A00F1ADA8 /* PhotoViewModel.swift */; };
+		20EAEEFC2661ECF700F1ADA8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEFB2661ECF700F1ADA8 /* PhotoCell.swift */; };
+		20EAEEFF2661EE1D00F1ADA8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 20EAEEFE2661EE1D00F1ADA8 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		209241A7266459DA00CF7A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20EAEE7E26616AAE00F1ADA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20EAEE8526616AAE00F1ADA8;
+			remoteInfo = "kariCare-ios";
+		};
+		20EAEE9D26616AB200F1ADA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20EAEE7E26616AAE00F1ADA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20EAEE8526616AAE00F1ADA8;
+			remoteInfo = "kariCare-ios";
+		};
+		20EAEEA826616AB200F1ADA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20EAEE7E26616AAE00F1ADA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20EAEE8526616AAE00F1ADA8;
+			remoteInfo = "kariCare-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		203919E42663BE63000C89F4 /* LiveBagdeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBagdeView.swift; sourceTree = "<group>"; };
+		209241A2266459D900CF7A86 /* kariCareConstantCheck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kariCareConstantCheck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		209241A4266459DA00CF7A86 /* kariCareConstantCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kariCareConstantCheck.swift; sourceTree = "<group>"; };
+		209241A6266459DA00CF7A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C0B7E32662780E00D8FB10 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		20C0B7E626627C1A00D8FB10 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		20C0B7E92662854300D8FB10 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		20C0B7EB2662B74E00D8FB10 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		20EAEE8626616AAE00F1ADA8 /* kariCare-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kariCare-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAEE8926616AAE00F1ADA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20EAEE8B26616AAE00F1ADA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		20EAEE8D26616AAE00F1ADA8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20EAEE9226616AB200F1ADA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20EAEE9526616AB200F1ADA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20EAEE9726616AB200F1ADA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EAEE9C26616AB200F1ADA8 /* kariCare_iosAPITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kariCare_iosAPITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAEEA026616AB200F1ADA8 /* kariCare_iosAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kariCare_iosAPITest.swift; sourceTree = "<group>"; };
+		20EAEEA226616AB200F1ADA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EAEEA726616AB200F1ADA8 /* kariCare-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kariCare-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAEEAB26616AB200F1ADA8 /* kariCare_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kariCare_iosUITests.swift; sourceTree = "<group>"; };
+		20EAEEAD26616AB200F1ADA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EAEEBF26616F4600F1ADA8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		20EAEEC226616F9700F1ADA8 /* CustomHttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHttpError.swift; sourceTree = "<group>"; };
+		20EAEEC426616FBA00F1ADA8 /* UnknownError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownError.swift; sourceTree = "<group>"; };
+		20EAEEC626616FD000F1ADA8 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		20EAEEC82661702900F1ADA8 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		20EAEECB266170DB00F1ADA8 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		20EAEECD266170FD00F1ADA8 /* StackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView+Extension.swift"; sourceTree = "<group>"; };
+		20EAEECF2661712700F1ADA8 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		20EAEED22661716100F1ADA8 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		20EAEED52661722200F1ADA8 /* DataFetchedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchedDelegate.swift; sourceTree = "<group>"; };
+		20EAEED72661724800F1ADA8 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		20EAEED926617C1500F1ADA8 /* TabBarMenuBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenuBaseController.swift; sourceTree = "<group>"; };
+		20EAEEDD26617F0400F1ADA8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20EAEEE12661819E00F1ADA8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		20EAEEEA266187EE00F1ADA8 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		20EAEEEC26618EC600F1ADA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		20EAEEEF2661B9FC00F1ADA8 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		20EAEEF32661D82C00F1ADA8 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		20EAEEF52661DAB900F1ADA8 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		20EAEEF82661DD4A00F1ADA8 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		20EAEEFB2661ECF700F1ADA8 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2092419F266459D900CF7A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE8326616AAE00F1ADA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EAEEFF2661EE1D00F1ADA8 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE9926616AB200F1ADA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEEA426616AB200F1ADA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		209241A3266459D900CF7A86 /* kariCareConstantCheck */ = {
+			isa = PBXGroup;
+			children = (
+				209241A4266459DA00CF7A86 /* kariCareConstantCheck.swift */,
+				209241A6266459DA00CF7A86 /* Info.plist */,
+			);
+			path = kariCareConstantCheck;
+			sourceTree = "<group>";
+		};
+		20AF9EBF26646C2200037088 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEE9226616AB200F1ADA8 /* Assets.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		20AF9EC026646C3700037088 /* SupporingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEE9726616AB200F1ADA8 /* Info.plist */,
+			);
+			path = SupporingFiles;
+			sourceTree = "<group>";
+		};
+		20AF9EC126646C6300037088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEE9426616AB200F1ADA8 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20C0B7E526627C0300D8FB10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				20C0B7E626627C1A00D8FB10 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20C0B7E8266284F300D8FB10 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				20C0B7E92662854300D8FB10 /* StoryCell.swift */,
+				20C0B7EB2662B74E00D8FB10 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		20EAEE7D26616AAE00F1ADA8 = {
+			isa = PBXGroup;
+			children = (
+				20EAEE8826616AAE00F1ADA8 /* kariCare-ios */,
+				209241A3266459D900CF7A86 /* kariCareConstantCheck */,
+				20EAEE9F26616AB200F1ADA8 /* kariCare_iosAPITest */,
+				20EAEEAA26616AB200F1ADA8 /* kariCare-iosUITests */,
+				20EAEE8726616AAE00F1ADA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20EAEE8726616AAE00F1ADA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEE8626616AAE00F1ADA8 /* kariCare-ios.app */,
+				20EAEE9C26616AB200F1ADA8 /* kariCare_iosAPITest.xctest */,
+				20EAEEA726616AB200F1ADA8 /* kariCare-iosUITests.xctest */,
+				209241A2266459D900CF7A86 /* kariCareConstantCheck.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20EAEE8826616AAE00F1ADA8 /* kariCare-ios */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEBD26616EDC00F1ADA8 /* AppDelegates */,
+				20EAEEBE26616F2300F1ADA8 /* Networking */,
+				20EAEEBC26616ECF00F1ADA8 /* Models */,
+				20EAEEB926616C9C00F1ADA8 /* Controllers */,
+				20EAEECA266170C600F1ADA8 /* Extensions */,
+				20EAEED12661713C00F1ADA8 /* Helpers */,
+				20AF9EBF26646C2200037088 /* Resouces */,
+				20AF9EC126646C6300037088 /* Views */,
+				20AF9EC026646C3700037088 /* SupporingFiles */,
+			);
+			path = "kariCare-ios";
+			sourceTree = "<group>";
+		};
+		20EAEE9F26616AB200F1ADA8 /* kariCare_iosAPITest */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEA026616AB200F1ADA8 /* kariCare_iosAPITest.swift */,
+				20EAEEA226616AB200F1ADA8 /* Info.plist */,
+			);
+			path = kariCare_iosAPITest;
+			sourceTree = "<group>";
+		};
+		20EAEEAA26616AB200F1ADA8 /* kariCare-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEAB26616AB200F1ADA8 /* kariCare_iosUITests.swift */,
+				20EAEEAD26616AB200F1ADA8 /* Info.plist */,
+			);
+			path = "kariCare-iosUITests";
+			sourceTree = "<group>";
+		};
+		20EAEEB926616C9C00F1ADA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEE8266187B100F1ADA8 /* Home */,
+				20EAEEE52661879100F1ADA8 /* Profile */,
+				20EAEEEE2661B9D300F1ADA8 /* TabBarMenu */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		20EAEEBC26616ECF00F1ADA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEDD26617F0400F1ADA8 /* Constants.swift */,
+				20EAEEF32661D82C00F1ADA8 /* ResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20EAEEBD26616EDC00F1ADA8 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEE8926616AAE00F1ADA8 /* AppDelegate.swift */,
+				20EAEE8B26616AAE00F1ADA8 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		20EAEEBE26616F2300F1ADA8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEED4266171FD00F1ADA8 /* Protocols */,
+				20EAEEC126616F7D00F1ADA8 /* Enums */,
+				20EAEEBF26616F4600F1ADA8 /* NetworkManager.swift */,
+				20EAEEC626616FD000F1ADA8 /* Decoder.swift */,
+				20EAEEF52661DAB900F1ADA8 /* ApiServices.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		20EAEEC126616F7D00F1ADA8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEC226616F9700F1ADA8 /* CustomHttpError.swift */,
+				20EAEEC426616FBA00F1ADA8 /* UnknownError.swift */,
+				20EAEEC82661702900F1ADA8 /* RequestType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		20EAEECA266170C600F1ADA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEECB266170DB00F1ADA8 /* UIView+Layout.swift */,
+				20EAEECD266170FD00F1ADA8 /* StackView+Extension.swift */,
+				20EAEECF2661712700F1ADA8 /* UICollectionView+Extension.swift */,
+				20EAEEEC26618EC600F1ADA8 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20EAEED12661713C00F1ADA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEED22661716100F1ADA8 /* ReusableView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		20EAEED4266171FD00F1ADA8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEED52661722200F1ADA8 /* DataFetchedDelegate.swift */,
+				20EAEED72661724800F1ADA8 /* WebService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		20EAEEE52661879100F1ADA8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEFA2661ECE000F1ADA8 /* Cells */,
+				20EAEEF72661DD3600F1ADA8 /* ViewModel */,
+				20EAEEE12661819E00F1ADA8 /* ProfileViewController.swift */,
+				20EAEEEA266187EE00F1ADA8 /* ProfileHeaderView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		20EAEEE8266187B100F1ADA8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20C0B7E8266284F300D8FB10 /* Cells */,
+				20C0B7E526627C0300D8FB10 /* ViewModel */,
+				20EAEE8D26616AAE00F1ADA8 /* HomeViewController.swift */,
+				20C0B7E32662780E00D8FB10 /* HomeHeaderView.swift */,
+				203919E42663BE63000C89F4 /* LiveBagdeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20EAEEEE2661B9D300F1ADA8 /* TabBarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEED926617C1500F1ADA8 /* TabBarMenuBaseController.swift */,
+				20EAEEEF2661B9FC00F1ADA8 /* TabItem.swift */,
+			);
+			path = TabBarMenu;
+			sourceTree = "<group>";
+		};
+		20EAEEF72661DD3600F1ADA8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEF82661DD4A00F1ADA8 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20EAEEFA2661ECE000F1ADA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				20EAEEFB2661ECF700F1ADA8 /* PhotoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209241A1266459D900CF7A86 /* kariCareConstantCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209241AB266459DA00CF7A86 /* Build configuration list for PBXNativeTarget "kariCareConstantCheck" */;
+			buildPhases = (
+				2092419E266459D900CF7A86 /* Sources */,
+				2092419F266459D900CF7A86 /* Frameworks */,
+				209241A0266459D900CF7A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				209241A8266459DA00CF7A86 /* PBXTargetDependency */,
+			);
+			name = kariCareConstantCheck;
+			productName = kariCareConstantCheck;
+			productReference = 209241A2266459D900CF7A86 /* kariCareConstantCheck.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20EAEE8526616AAE00F1ADA8 /* kariCare-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EAEEB026616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare-ios" */;
+			buildPhases = (
+				20EAEE8226616AAE00F1ADA8 /* Sources */,
+				20EAEE8326616AAE00F1ADA8 /* Frameworks */,
+				20EAEE8426616AAE00F1ADA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kariCare-ios";
+			packageProductDependencies = (
+				20EAEEFE2661EE1D00F1ADA8 /* SDWebImage */,
+			);
+			productName = "kariCare-ios";
+			productReference = 20EAEE8626616AAE00F1ADA8 /* kariCare-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20EAEE9B26616AB200F1ADA8 /* kariCare_iosAPITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EAEEB326616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare_iosAPITest" */;
+			buildPhases = (
+				20EAEE9826616AB200F1ADA8 /* Sources */,
+				20EAEE9926616AB200F1ADA8 /* Frameworks */,
+				20EAEE9A26616AB200F1ADA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20EAEE9E26616AB200F1ADA8 /* PBXTargetDependency */,
+			);
+			name = kariCare_iosAPITest;
+			productName = "kariCare-iosTests";
+			productReference = 20EAEE9C26616AB200F1ADA8 /* kariCare_iosAPITest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20EAEEA626616AB200F1ADA8 /* kariCare-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EAEEB626616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare-iosUITests" */;
+			buildPhases = (
+				20EAEEA326616AB200F1ADA8 /* Sources */,
+				20EAEEA426616AB200F1ADA8 /* Frameworks */,
+				20EAEEA526616AB200F1ADA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20EAEEA926616AB200F1ADA8 /* PBXTargetDependency */,
+			);
+			name = "kariCare-iosUITests";
+			productName = "kariCare-iosUITests";
+			productReference = 20EAEEA726616AB200F1ADA8 /* kariCare-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20EAEE7E26616AAE00F1ADA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					209241A1266459D900CF7A86 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 20EAEE8526616AAE00F1ADA8;
+					};
+					20EAEE8526616AAE00F1ADA8 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					20EAEE9B26616AB200F1ADA8 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 20EAEE8526616AAE00F1ADA8;
+					};
+					20EAEEA626616AB200F1ADA8 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 20EAEE8526616AAE00F1ADA8;
+					};
+				};
+			};
+			buildConfigurationList = 20EAEE8126616AAE00F1ADA8 /* Build configuration list for PBXProject "kariCare-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20EAEE7D26616AAE00F1ADA8;
+			packageReferences = (
+				20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 20EAEE8726616AAE00F1ADA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20EAEE8526616AAE00F1ADA8 /* kariCare-ios */,
+				20EAEE9B26616AB200F1ADA8 /* kariCare_iosAPITest */,
+				20EAEEA626616AB200F1ADA8 /* kariCare-iosUITests */,
+				209241A1266459D900CF7A86 /* kariCareConstantCheck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		209241A0266459D900CF7A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE8426616AAE00F1ADA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EAEE9626616AB200F1ADA8 /* LaunchScreen.storyboard in Resources */,
+				20EAEE9326616AB200F1ADA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE9A26616AB200F1ADA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEEA526616AB200F1ADA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2092419E266459D900CF7A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209241A5266459DA00CF7A86 /* kariCareConstantCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE8226616AAE00F1ADA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EAEED02661712700F1ADA8 /* UICollectionView+Extension.swift in Sources */,
+				20EAEECE266170FD00F1ADA8 /* StackView+Extension.swift in Sources */,
+				20EAEE8E26616AAE00F1ADA8 /* HomeViewController.swift in Sources */,
+				20EAEED82661724800F1ADA8 /* WebService.swift in Sources */,
+				20EAEEF92661DD4A00F1ADA8 /* PhotoViewModel.swift in Sources */,
+				20EAEE8A26616AAE00F1ADA8 /* AppDelegate.swift in Sources */,
+				20C0B7EA2662854300D8FB10 /* StoryCell.swift in Sources */,
+				20EAEEFC2661ECF700F1ADA8 /* PhotoCell.swift in Sources */,
+				20EAEEC026616F4600F1ADA8 /* NetworkManager.swift in Sources */,
+				20EAEEC326616F9700F1ADA8 /* CustomHttpError.swift in Sources */,
+				20EAEEEB266187EE00F1ADA8 /* ProfileHeaderView.swift in Sources */,
+				20EAEECC266170DB00F1ADA8 /* UIView+Layout.swift in Sources */,
+				20EAEEDE26617F0400F1ADA8 /* Constants.swift in Sources */,
+				203919E52663BE63000C89F4 /* LiveBagdeView.swift in Sources */,
+				20C0B7E42662780E00D8FB10 /* HomeHeaderView.swift in Sources */,
+				20EAEEF02661B9FC00F1ADA8 /* TabItem.swift in Sources */,
+				20EAEEE22661819E00F1ADA8 /* ProfileViewController.swift in Sources */,
+				20EAEEDA26617C1500F1ADA8 /* TabBarMenuBaseController.swift in Sources */,
+				20EAEED32661716100F1ADA8 /* ReusableView.swift in Sources */,
+				20EAEEED26618EC600F1ADA8 /* Extensions.swift in Sources */,
+				20EAEED62661722200F1ADA8 /* DataFetchedDelegate.swift in Sources */,
+				20EAEEF42661D82C00F1ADA8 /* ResponseModel.swift in Sources */,
+				20EAEEC526616FBA00F1ADA8 /* UnknownError.swift in Sources */,
+				20EAEEF62661DAB900F1ADA8 /* ApiServices.swift in Sources */,
+				20C0B7E726627C1A00D8FB10 /* HomeViewModel.swift in Sources */,
+				20C0B7EC2662B74E00D8FB10 /* FeedCell.swift in Sources */,
+				20EAEEC726616FD000F1ADA8 /* Decoder.swift in Sources */,
+				20EAEE8C26616AAE00F1ADA8 /* SceneDelegate.swift in Sources */,
+				20EAEEC92661702900F1ADA8 /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEE9826616AB200F1ADA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EAEEA126616AB200F1ADA8 /* kariCare_iosAPITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EAEEA326616AB200F1ADA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EAEEAC26616AB200F1ADA8 /* kariCare_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		209241A8266459DA00CF7A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20EAEE8526616AAE00F1ADA8 /* kariCare-ios */;
+			targetProxy = 209241A7266459DA00CF7A86 /* PBXContainerItemProxy */;
+		};
+		20EAEE9E26616AB200F1ADA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20EAEE8526616AAE00F1ADA8 /* kariCare-ios */;
+			targetProxy = 20EAEE9D26616AB200F1ADA8 /* PBXContainerItemProxy */;
+		};
+		20EAEEA926616AB200F1ADA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20EAEE8526616AAE00F1ADA8 /* kariCare-ios */;
+			targetProxy = 20EAEEA826616AB200F1ADA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20EAEE9426616AB200F1ADA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EAEE9526616AB200F1ADA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		209241A9266459DA00CF7A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = kariCareConstantCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cowry.kariCareConstantCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kariCare-ios.app/kariCare-ios";
+			};
+			name = Debug;
+		};
+		209241AA266459DA00CF7A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = kariCareConstantCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cowry.kariCareConstantCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kariCare-ios.app/kariCare-ios";
+			};
+			name = Release;
+		};
+		20EAEEAE26616AB200F1ADA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20EAEEAF26616AB200F1ADA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20EAEEB126616AB200F1ADA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = "kariCare-ios/SupporingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cowry.kariCare-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20EAEEB226616AB200F1ADA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = "kariCare-ios/SupporingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cowry.kariCare-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20EAEEB426616AB200F1ADA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = kariCare_iosAPITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cowry.kariCare_iosAPITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kariCare-ios.app/kariCare-ios";
+			};
+			name = Debug;
+		};
+		20EAEEB526616AB200F1ADA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = kariCare_iosAPITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cowry.kariCare_iosAPITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kariCare-ios.app/kariCare-ios";
+			};
+			name = Release;
+		};
+		20EAEEB726616AB200F1ADA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = "kariCare-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cowry.kariCare-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kariCare-ios";
+			};
+			name = Debug;
+		};
+		20EAEEB826616AB200F1ADA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Y2F29NLGD;
+				INFOPLIST_FILE = "kariCare-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cowry.kariCare-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "kariCare-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209241AB266459DA00CF7A86 /* Build configuration list for PBXNativeTarget "kariCareConstantCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209241A9266459DA00CF7A86 /* Debug */,
+				209241AA266459DA00CF7A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EAEE8126616AAE00F1ADA8 /* Build configuration list for PBXProject "kariCare-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EAEEAE26616AB200F1ADA8 /* Debug */,
+				20EAEEAF26616AB200F1ADA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EAEEB026616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EAEEB126616AB200F1ADA8 /* Debug */,
+				20EAEEB226616AB200F1ADA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EAEEB326616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare_iosAPITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EAEEB426616AB200F1ADA8 /* Debug */,
+				20EAEEB526616AB200F1ADA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EAEEB626616AB200F1ADA8 /* Build configuration list for PBXNativeTarget "kariCare-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EAEEB726616AB200F1ADA8 /* Debug */,
+				20EAEEB826616AB200F1ADA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20EAEEFE2661EE1D00F1ADA8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 20EAEE7E26616AAE00F1ADA8 /* Project object */;
+}
