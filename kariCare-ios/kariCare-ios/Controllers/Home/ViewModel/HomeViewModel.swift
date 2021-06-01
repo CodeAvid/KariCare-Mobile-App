@@ -18,7 +18,6 @@ class HomeViewModel{
     
     let delegate: DataFetchedDelegate?
     var webService: ApiService
-    var pages: Pages?
     var page2Photos = [Photo]()
     var page3Photos = [Photo]()
     
@@ -34,7 +33,7 @@ class HomeViewModel{
     private func getPages(){
         
         dispatchGroup.enter()
-        webService.getPage2Photos { [weak self] response in
+        webService.getPhotos(for: PagesIndex.page2.rawValue) { [weak self] response in
             switch response{
             case .success(let photoList):
                 self?.page2Photos = photoList
@@ -44,9 +43,9 @@ class HomeViewModel{
                 self?.delegate?.onFetchError(error: error)
             }
         }
-        dispatchGroup.enter()
         
-        webService.getPage3Photos { [weak self] response in
+        dispatchGroup.enter()
+        webService.getPhotos(for: PagesIndex.page3.rawValue) { [weak self] response in
             switch response{
             case .success(let photoList):
                 self?.page3Photos = photoList
@@ -57,13 +56,7 @@ class HomeViewModel{
             }
         }
         
-        
         dispatchGroup.notify(queue: .main) { [weak self ] in
-        
-            if let page2 = self?.page2Photos, let page3 = self?.page2Photos{
-                self?.pages = Pages(page2: page2, page3: page3)
-            }
-            
             self?.delegate?.onDataFetched()
         }
         

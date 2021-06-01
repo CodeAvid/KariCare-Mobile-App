@@ -21,7 +21,7 @@ class PhotoViewModel{
     }
     
     private func getPhotoList(){
-        webService.getPhotos { [weak self] response in
+        webService.getPhotos(for: PagesIndex.page1.rawValue){ [weak self] response in
             switch response{
             case .success(let photoList):
                 self?.photoList = photoList

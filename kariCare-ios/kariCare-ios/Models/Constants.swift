@@ -29,12 +29,9 @@ struct Constants {
     }
     
     struct ApiServiceUrl{
-        static var page1 = "https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=1"
-        
-        static var page2 = "https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=2"
-        
-        static var page3 = "https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=3"
+        static var page = "https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page="
     }
+    
     
     struct HttpErrorMessage {
         static let notJson =  "Response not in JSON format"

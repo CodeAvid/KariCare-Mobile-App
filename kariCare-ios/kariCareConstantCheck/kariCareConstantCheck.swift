@@ -37,11 +37,7 @@ class kariCareConstantCheck: XCTestCase {
         XCTAssertEqual("profileImage", sut.Images.profileImage)
         
         
-        XCTAssertEqual("https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=1", sut.ApiServiceUrl.page1)
-        
-        XCTAssertEqual("https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=2", sut.ApiServiceUrl.page2)
-        
-        XCTAssertEqual("https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=3", sut.ApiServiceUrl.page3)
+        XCTAssertEqual("https://api.unsplash.com/photos/?client_id=TOCnwUYSNssEFuqTc-nrr9W50ONTeLfn1G8W4dyD_to&page=", sut.ApiServiceUrl.page)
         
         XCTAssertEqual("Response not in JSON format", sut.HttpErrorMessage.notJson)
         
