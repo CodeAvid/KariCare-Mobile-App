@@ -156,7 +156,7 @@ class Post extends StatelessWidget {
                               tag: photo.urls.small,
                               child: CachedNetworkImage(
                                 height:
-                                    MediaQuery.maybeOf(context).size.height / 5,
+                                    MediaQuery.maybeOf(context).size.height / 4,
                                 width: double.infinity,
                                 imageUrl: photo.urls.small,
                                 fit: BoxFit.cover,

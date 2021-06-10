@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 50.0),
+          padding: const EdgeInsets.fromLTRB(20.0, 50.0, 20.0, 20.0),
           child: Column(
             children: [
               Row(

@@ -34,28 +34,31 @@ class _HomeDetailScreenState extends State<HomeDetailScreen> {
                     ),
                     child: Hero(
                       tag: widget.photo.urls.small,
-                      child: CachedNetworkImage(
-                        height: MediaQuery.of(context).size.height / 2,
-                        width: double.infinity,
-                        imageUrl: widget.photo.urls.small,
-                        fit: BoxFit.cover,
-                        placeholder: (BuildContext context, String text) {
-                          return Shimmer.fromColors(
-                            baseColor: Colors.grey[300],
-                            highlightColor: Colors.grey[100],
-                            child: Container(
-                              height: MediaQuery.of(context).size.height / 2,
-                              width: double.infinity,
-                              decoration: BoxDecoration(
-                                color: Colors.grey[200],
-                                borderRadius: BorderRadius.only(
-                                  bottomLeft: Radius.circular(20.0),
-                                  bottomRight: Radius.circular(20.0),
+                      child: GestureDetector(
+                        onDoubleTap: () => Navigator.pop(context),
+                        child: CachedNetworkImage(
+                          height: MediaQuery.of(context).size.height / 2,
+                          width: double.infinity,
+                          imageUrl: widget.photo.urls.small,
+                          fit: BoxFit.cover,
+                          placeholder: (BuildContext context, String text) {
+                            return Shimmer.fromColors(
+                              baseColor: Colors.grey[300],
+                              highlightColor: Colors.grey[100],
+                              child: Container(
+                                height: MediaQuery.of(context).size.height / 2,
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[200],
+                                  borderRadius: BorderRadius.only(
+                                    bottomLeft: Radius.circular(20.0),
+                                    bottomRight: Radius.circular(20.0),
+                                  ),
                                 ),
                               ),
-                            ),
-                          );
-                        },
+                            );
+                          },
+                        ),
                       ),
                     ),
                   ),
