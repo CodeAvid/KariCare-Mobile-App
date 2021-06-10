@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200BE4D42669ABE70005EF0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200BE4D32669ABE70005EF0A /* GoogleService-Info.plist */; };
+		200BE4D72669B0C60005EF0A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 200BE4D62669B0C60005EF0A /* FirebaseAnalytics */; };
+		20138FE8266AFCFC0041D582 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138FE7266AFCFC0041D582 /* UIView+Animations.swift */; };
+		20138FEA266B03070041D582 /* CoreGraphiceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20138FE9266B03070041D582 /* CoreGraphiceExtension.swift */; };
 		203919E52663BE63000C89F4 /* LiveBagdeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203919E42663BE63000C89F4 /* LiveBagdeView.swift */; };
 		209241A5266459DA00CF7A86 /* kariCareConstantCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209241A4266459DA00CF7A86 /* kariCareConstantCheck.swift */; };
+		209EBC21266A5EA90009125E /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EBC20266A5EA90009125E /* ShimmerEffect.swift */; };
+		209EBC24266AEA630009125E /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EBC23266AEA630009125E /* CoordinatorProtocol.swift */; };
+		209EBC26266AEB360009125E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EBC25266AEB360009125E /* MainCoordinator.swift */; };
+		209EBC28266AF0C90009125E /* ComponentsShimmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209EBC27266AF0C90009125E /* ComponentsShimmers.swift */; };
 		20C0B7E42662780E00D8FB10 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E32662780E00D8FB10 /* HomeHeaderView.swift */; };
 		20C0B7E726627C1A00D8FB10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E626627C1A00D8FB10 /* HomeViewModel.swift */; };
 		20C0B7EA2662854300D8FB10 /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0B7E92662854300D8FB10 /* StoryCell.swift */; };
@@ -36,7 +44,7 @@
 		20EAEEDE26617F0400F1ADA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEDD26617F0400F1ADA8 /* Constants.swift */; };
 		20EAEEE22661819E00F1ADA8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEE12661819E00F1ADA8 /* ProfileViewController.swift */; };
 		20EAEEEB266187EE00F1ADA8 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEA266187EE00F1ADA8 /* ProfileHeaderView.swift */; };
-		20EAEEED26618EC600F1ADA8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEC26618EC600F1ADA8 /* Extensions.swift */; };
+		20EAEEED26618EC600F1ADA8 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEC26618EC600F1ADA8 /* ViewExtensions.swift */; };
 		20EAEEF02661B9FC00F1ADA8 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEEF2661B9FC00F1ADA8 /* TabItem.swift */; };
 		20EAEEF42661D82C00F1ADA8 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEF32661D82C00F1ADA8 /* ResponseModel.swift */; };
 		20EAEEF62661DAB900F1ADA8 /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAEEF52661DAB900F1ADA8 /* ApiServices.swift */; };
@@ -70,10 +78,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200BE4D32669ABE70005EF0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20138FE7266AFCFC0041D582 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		20138FE9266B03070041D582 /* CoreGraphiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphiceExtension.swift; sourceTree = "<group>"; };
 		203919E42663BE63000C89F4 /* LiveBagdeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBagdeView.swift; sourceTree = "<group>"; };
 		209241A2266459D900CF7A86 /* kariCareConstantCheck.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kariCareConstantCheck.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		209241A4266459DA00CF7A86 /* kariCareConstantCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kariCareConstantCheck.swift; sourceTree = "<group>"; };
 		209241A6266459DA00CF7A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209EBC20266A5EA90009125E /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		209EBC23266AEA630009125E /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		209EBC25266AEB360009125E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		209EBC27266AF0C90009125E /* ComponentsShimmers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsShimmers.swift; sourceTree = "<group>"; };
 		20C0B7E32662780E00D8FB10 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		20C0B7E626627C1A00D8FB10 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		20C0B7E92662854300D8FB10 /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
@@ -107,7 +122,7 @@
 		20EAEEDD26617F0400F1ADA8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		20EAEEE12661819E00F1ADA8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		20EAEEEA266187EE00F1ADA8 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
-		20EAEEEC26618EC600F1ADA8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		20EAEEEC26618EC600F1ADA8 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		20EAEEEF2661B9FC00F1ADA8 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		20EAEEF32661D82C00F1ADA8 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		20EAEEF52661DAB900F1ADA8 /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
@@ -127,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200BE4D72669B0C60005EF0A /* FirebaseAnalytics in Frameworks */,
 				20EAEEFF2661EE1D00F1ADA8 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +164,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20138FE6266AFCCB0041D582 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				20138FE7266AFCFC0041D582 /* UIView+Animations.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		209241A3266459D900CF7A86 /* kariCareConstantCheck */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +179,24 @@
 				209241A6266459DA00CF7A86 /* Info.plist */,
 			);
 			path = kariCareConstantCheck;
+			sourceTree = "<group>";
+		};
+		209EBC1F266A5E8B0009125E /* Effects & Layers */ = {
+			isa = PBXGroup;
+			children = (
+				209EBC20266A5EA90009125E /* ShimmerEffect.swift */,
+				209EBC27266AF0C90009125E /* ComponentsShimmers.swift */,
+			);
+			path = "Effects & Layers";
+			sourceTree = "<group>";
+		};
+		209EBC22266AE8C40009125E /* Cordinators */ = {
+			isa = PBXGroup;
+			children = (
+				209EBC23266AEA630009125E /* CoordinatorProtocol.swift */,
+				209EBC25266AEB360009125E /* MainCoordinator.swift */,
+			);
+			path = Cordinators;
 			sourceTree = "<group>";
 		};
 		20AF9EBF26646C2200037088 /* Resouces */ = {
@@ -168,6 +210,7 @@
 		20AF9EC026646C3700037088 /* SupporingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				200BE4D32669ABE70005EF0A /* GoogleService-Info.plist */,
 				20EAEE9726616AB200F1ADA8 /* Info.plist */,
 			);
 			path = SupporingFiles;
@@ -227,7 +270,10 @@
 				20EAEEBE26616F2300F1ADA8 /* Networking */,
 				20EAEEBC26616ECF00F1ADA8 /* Models */,
 				20EAEEB926616C9C00F1ADA8 /* Controllers */,
+				209EBC1F266A5E8B0009125E /* Effects & Layers */,
+				209EBC22266AE8C40009125E /* Cordinators */,
 				20EAEECA266170C600F1ADA8 /* Extensions */,
+				20138FE6266AFCCB0041D582 /* Animations */,
 				20EAEED12661713C00F1ADA8 /* Helpers */,
 				20AF9EBF26646C2200037088 /* Resouces */,
 				20AF9EC126646C6300037088 /* Views */,
@@ -311,7 +357,8 @@
 				20EAEECB266170DB00F1ADA8 /* UIView+Layout.swift */,
 				20EAEECD266170FD00F1ADA8 /* StackView+Extension.swift */,
 				20EAEECF2661712700F1ADA8 /* UICollectionView+Extension.swift */,
-				20EAEEEC26618EC600F1ADA8 /* Extensions.swift */,
+				20EAEEEC26618EC600F1ADA8 /* ViewExtensions.swift */,
+				20138FE9266B03070041D582 /* CoreGraphiceExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +464,7 @@
 			name = "kariCare-ios";
 			packageProductDependencies = (
 				20EAEEFE2661EE1D00F1ADA8 /* SDWebImage */,
+				200BE4D62669B0C60005EF0A /* FirebaseAnalytics */,
 			);
 			productName = "kariCare-ios";
 			productReference = 20EAEE8626616AAE00F1ADA8 /* kariCare-ios.app */;
@@ -495,6 +543,7 @@
 			mainGroup = 20EAEE7D26616AAE00F1ADA8;
 			packageReferences = (
 				20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				200BE4D52669B0C60005EF0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 20EAEE8726616AAE00F1ADA8 /* Products */;
 			projectDirPath = "";
@@ -522,6 +571,7 @@
 			files = (
 				20EAEE9626616AB200F1ADA8 /* LaunchScreen.storyboard in Resources */,
 				20EAEE9326616AB200F1ADA8 /* Assets.xcassets in Resources */,
+				200BE4D42669ABE70005EF0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +604,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209EBC24266AEA630009125E /* CoordinatorProtocol.swift in Sources */,
+				209EBC21266A5EA90009125E /* ShimmerEffect.swift in Sources */,
 				20EAEED02661712700F1ADA8 /* UICollectionView+Extension.swift in Sources */,
 				20EAEECE266170FD00F1ADA8 /* StackView+Extension.swift in Sources */,
 				20EAEE8E26616AAE00F1ADA8 /* HomeViewController.swift in Sources */,
@@ -567,17 +619,21 @@
 				20EAEEEB266187EE00F1ADA8 /* ProfileHeaderView.swift in Sources */,
 				20EAEECC266170DB00F1ADA8 /* UIView+Layout.swift in Sources */,
 				20E12A702666A7B200AED7FE /* Pages.swift in Sources */,
+				20138FEA266B03070041D582 /* CoreGraphiceExtension.swift in Sources */,
 				20EAEEDE26617F0400F1ADA8 /* Constants.swift in Sources */,
+				209EBC26266AEB360009125E /* MainCoordinator.swift in Sources */,
 				203919E52663BE63000C89F4 /* LiveBagdeView.swift in Sources */,
 				20C0B7E42662780E00D8FB10 /* HomeHeaderView.swift in Sources */,
 				20EAEEF02661B9FC00F1ADA8 /* TabItem.swift in Sources */,
 				20EAEEE22661819E00F1ADA8 /* ProfileViewController.swift in Sources */,
 				20EAEEDA26617C1500F1ADA8 /* TabBarMenuBaseController.swift in Sources */,
+				20138FE8266AFCFC0041D582 /* UIView+Animations.swift in Sources */,
 				20EAEED32661716100F1ADA8 /* ReusableView.swift in Sources */,
-				20EAEEED26618EC600F1ADA8 /* Extensions.swift in Sources */,
+				20EAEEED26618EC600F1ADA8 /* ViewExtensions.swift in Sources */,
 				20EAEED62661722200F1ADA8 /* DataFetchedDelegate.swift in Sources */,
 				20EAEEF42661D82C00F1ADA8 /* ResponseModel.swift in Sources */,
 				20EAEEC526616FBA00F1ADA8 /* UnknownError.swift in Sources */,
+				209EBC28266AF0C90009125E /* ComponentsShimmers.swift in Sources */,
 				20EAEEF62661DAB900F1ADA8 /* ApiServices.swift in Sources */,
 				20C0B7E726627C1A00D8FB10 /* HomeViewModel.swift in Sources */,
 				20C0B7EC2662B74E00D8FB10 /* FeedCell.swift in Sources */,
@@ -726,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -781,7 +837,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -799,6 +855,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y2F29NLGD;
 				INFOPLIST_FILE = "kariCare-ios/SupporingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -818,6 +875,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y2F29NLGD;
 				INFOPLIST_FILE = "kariCare-ios/SupporingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -964,6 +1022,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		200BE4D52669B0C60005EF0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
 		20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -975,6 +1041,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		200BE4D62669B0C60005EF0A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 200BE4D52669B0C60005EF0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		20EAEEFE2661EE1D00F1ADA8 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 20EAEEFD2661EE1D00F1ADA8 /* XCRemoteSwiftPackageReference "SDWebImage" */;

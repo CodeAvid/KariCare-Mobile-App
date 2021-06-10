@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,10 +14,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        if let windowScence = scene as? UIWindowScene{
-            let window = UIWindow(windowScene: windowScence)
+        if let windowScene = scene as? UIWindowScene{
+            let window = UIWindow(windowScene: windowScene)
             window.rootViewController = TabBarMenuBaseController()
             self.window = window
+            FirebaseApp.configure()
             window.makeKeyAndVisible()
         }
         guard let _ = (scene as? UIWindowScene) else { return }

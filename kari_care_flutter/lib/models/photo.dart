@@ -1,218 +1,142 @@
 // To parse this JSON data, do
 //
-//     final photos = photosFromJson(jsonString);
+//     final photo = photoFromJson(jsonString);
 
-// import 'dart:convert';
+import 'dart:convert';
 
-// List<Photos> photosFromJson(String str) =>
-//     List<Photos>.from(json.decode(str).map((x) => Photos.fromJson(x)));
+List<Photo> photoFromJson(String str) =>
+    List<Photo>.from(json.decode(str).map((x) => Photo.fromJson(x)));
 
-// String photosToJson(List<Photos> data) =>
-//     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+String photoToJson(List<Photo> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-// class Photos {
-//   final String id;
+class Photo {
+  Photo({
+    this.id,
+    this.color,
+    this.description,
+    this.urls,
+    this.likes,
+    this.user,
+  });
 
-//   final String color;
-//   final String description;
-//   final Urls urls;
+  final String id;
 
-//   final int likes;
-//   final User user;
+  final String color;
 
-//   factory Photos.fromJson(Map<String, dynamic> json) => Photos(
-//         id: json["id"],
-//         color: json["color"],
-//         description: json["description"] == null ? null : json["description"],
-//         urls: Urls.fromJson(json["urls"]),
-//         likes: json["likes"],
-//         user: User.fromJson(json["user"]),
-//       );
+  final String description;
 
-//   Photos({
-//     this.id,
-//     this.color,
-//     this.description,
-//     this.urls,
-//     this.likes,
-//     this.user,
-//   })
+  final Urls urls;
 
-//   Map<String, dynamic> toJson() => {
-//         "id": id,
-//         "color": color,
-//         "description": description == null ? null : description,
-//         "urls": urls.toJson(),
-//         "likes": likes,
-//         "user": user.toJson(),
-//       };
-// }
+  final int likes;
 
-// class User {
-//   String id;
-//   String username;
-//   String name;
-//   String firstName;
-//   String lastName;
-//   String bio;
-//   String location;
-//   ProfileImage profileImage;
-//   int totalCollections;
-//   int totalLikes;
-//   int totalPhotos;
+  final User user;
 
-//   User({
-//     required this.id,
-//     required this.username,
-//     required this.name,
-//     required this.firstName,
-//     required this.lastName,
-//     required this.bio,
-//     required this.location,
-//     required this.profileImage,
-//     required this.totalCollections,
-//     required this.totalLikes,
-//     required this.totalPhotos,
-//   });
+  factory Photo.fromJson(Map<String, dynamic> json) => Photo(
+        id: json["id"],
+        color: json["color"],
+        description: json["description"] == null ? null : json["description"],
+        urls: Urls.fromJson(json["urls"]),
+        likes: json["likes"],
+        user: User.fromJson(json["user"]),
+      );
 
-//   factory User.fromJson(Map<String, dynamic> json) => User(
-//         id: json["id"],
-//         username: json["username"],
-//         name: json["name"],
-//         firstName: json["first_name"],
-//         lastName: json["last_name"] == null ? null : json["last_name"],
-//         bio: json["bio"] == null ? null : json["bio"],
-//         location: json["location"] == null ? null : json["location"],
-//         profileImage: ProfileImage.fromJson(json["profile_image"]),
-//         totalCollections: json["total_collections"],
-//         totalLikes: json["total_likes"],
-//         totalPhotos: json["total_photos"],
-//       );
+  Map<String, dynamic> toJson() => {
+        "id": id,
+        "color": color,
+        "description": description == null ? null : description,
+        "urls": urls.toJson(),
+        "likes": likes,
+        "user": user.toJson(),
+      };
+}
 
-//   Map<String, dynamic> toJson() => {
-//         "id": id,
-//         "username": username,
-//         "name": name,
-//         "first_name": firstName,
-//         "last_name": lastName == null ? null : lastName,
-//         "bio": bio == null ? null : bio,
-//         "location": location == null ? null : location,
-//         "profile_image": profileImage.toJson(),
-//         "total_collections": totalCollections,
-//         "total_likes": totalLikes,
-//         "total_photos": totalPhotos,
-//       };
-// }
+class User {
+  User({
+    this.id,
+    this.username,
+    this.name,
+    this.firstName,
+    this.lastName,
+    this.bio,
+    this.location,
+    this.profileImage,
+    this.totalCollections,
+    this.totalLikes,
+    this.totalPhotos,
+  });
 
-// class ProfileImage {
-//   String medium;
+  final String id;
 
-//   ProfileImage({
-//     required this.medium,
-//   });
+  final String username;
+  final String name;
+  final String firstName;
+  final String lastName;
 
-//   factory ProfileImage.fromJson(Map<String, dynamic> json) => ProfileImage(
-//         medium: json["medium"],
-//       );
+  final String bio;
+  final String location;
 
-//   Map<String, dynamic> toJson() => {
-//         "medium": medium,
-//       };
+  final ProfileImage profileImage;
 
-//   ProfileImage copyWith({
-//     String? small,
-//     String? medium,
-//     String? large,
-//   }) {
-//     return ProfileImage(
-//       medium: medium ?? this.medium,
-//     );
-//   }
+  final int totalCollections;
+  final int totalLikes;
+  final int totalPhotos;
 
-//   Map<String, dynamic> toMap() {
-//     return {
-//       'medium': medium,
-//     };
-//   }
+  factory User.fromJson(Map<String, dynamic> json) => User(
+        id: json["id"],
+        username: json["username"],
+        name: json["name"],
+        firstName: json["first_name"],
+        lastName: json["last_name"] == null ? null : json["last_name"],
+        bio: json["bio"] == null ? null : json["bio"],
+        location: json["location"] == null ? null : json["location"],
+        profileImage: ProfileImage.fromJson(json["profile_image"]),
+        totalCollections: json["total_collections"],
+        totalLikes: json["total_likes"],
+        totalPhotos: json["total_photos"],
+      );
 
-//   factory ProfileImage.fromMap(Map<String, dynamic> map) {
-//     return ProfileImage(
-//       medium: map['medium'],
-//     );
-//   }
+  Map<String, dynamic> toJson() => {
+        "id": id,
+        "username": username,
+        "name": name,
+        "first_name": firstName,
+        "last_name": lastName == null ? null : lastName,
+        "bio": bio == null ? null : bio,
+        "location": location == null ? null : location,
+        "profile_image": profileImage.toJson(),
+        "total_collections": totalCollections,
+        "total_likes": totalLikes,
+        "total_photos": totalPhotos,
+      };
+}
 
-//   String toJson() => json.encode(toMap());
+class ProfileImage {
+  ProfileImage({
+    this.small,
+  });
 
-//   factory ProfileImage.fromJson(String source) =>
-//       ProfileImage.fromMap(json.decode(source));
+  final String small;
 
-//   @override
-//   String toString() =>
-//       'ProfileImage(small: $small, medium: $medium, large: $large)';
+  factory ProfileImage.fromJson(Map<String, dynamic> json) => ProfileImage(
+        small: json["small"],
+      );
 
-//   @override
-//   bool operator ==(Object other) {
-//     if (identical(this, other)) return true;
+  Map<String, dynamic> toJson() => {
+        "small": small,
+      };
+}
 
-//     return other is ProfileImage &&
-//         other.small == small &&
-//         other.medium == medium &&
-//         other.large == large;
-//   }
+class Urls {
+  Urls({
+    this.small,
+  });
 
-//   @override
-//   int get hashCode => small.hashCode ^ medium.hashCode ^ large.hashCode;
-// }
+  final String small;
 
-// class Urls {
-//   String full;
+  factory Urls.fromJson(Map<String, dynamic> json) => Urls(
+        small: json["small"],
+      );
 
-//   Urls({
-//     required this.full,
-//   });
-
-//   factory Urls.fromJson(Map<String, dynamic> json) => Urls(
-//         full: json["full"],
-//       );
-
-//   Map<String, dynamic> toJson() => {
-//         "full": full,
-//       };
-
-//   Urls copyWith({
-//     String? full,
-//   }) {
-//     return Urls(
-//       full: full ?? this.full,
-//     );
-//   }
-
-//   Map<String, dynamic> toMap() {
-//     return {
-//       'full': full,
-//     };
-//   }
-
-//   factory Urls.fromMap(Map<String, dynamic> map) {
-//     return Urls(
-//       full: map['full'],
-//     );
-//   }
-
-//   String toJson() => json.encode(toMap());
-
-//   factory Urls.fromJson(String source) => Urls.fromMap(json.decode(source));
-
-//   @override
-//   String toString() => 'Urls(full: $full)';
-
-//   @override
-//   bool operator ==(Object other) {
-//     if (identical(this, other)) return true;
-
-//     return other is Urls && other.full == full;
-//   }
-
-//   @override
-//   int get hashCode => full.hashCode;
-// }
+  Map<String, dynamic> toJson() => {"small": small};
+}

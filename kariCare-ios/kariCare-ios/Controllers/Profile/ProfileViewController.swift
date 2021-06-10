@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController{
     typealias DataSource = UICollectionViewDiffableDataSource<Section, Photo>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Photo>
     
-    var ProfilecollectionView: UICollectionView! = nil
+    var ProfileCollectionView: UICollectionView! = nil
 
     let activityIndicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
@@ -49,7 +49,7 @@ extension ProfileViewController{
         collectionView.register(PhotoCell.self)
         collectionView.showsVerticalScrollIndicator = false
         collectionView.register(ProfileHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ProfileHeaderView.reuseIdentifier)
-        ProfilecollectionView = collectionView
+        ProfileCollectionView = collectionView
         applySnapshot()
     }
 }
@@ -60,7 +60,7 @@ extension ProfileViewController{
 
     func createDataSource() -> DataSource {
         let dataSource = DataSource(
-            collectionView: ProfilecollectionView,
+            collectionView: ProfileCollectionView,
             cellProvider: { (collectionView, indexPath, photo) ->
                 UICollectionViewCell? in
                 let cell : PhotoCell = collectionView.dequeueReusableCell(for: indexPath)

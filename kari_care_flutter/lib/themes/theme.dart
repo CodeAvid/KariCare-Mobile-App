@@ -16,10 +16,13 @@ class CustomTheme with ChangeNotifier {
     return ThemeData(
       primaryColor: CustomColors.lightBlueColor,
       scaffoldBackgroundColor: CustomColors.backgroundColor,
-      primaryColorLight: CustomColors.darkBlueColor,
+      primaryColorLight: CustomColors.blueColor,
+      primaryColorDark: CustomColors.darkBlueColor,
       secondaryHeaderColor: CustomColors.secondaryColor,
       accentColor: CustomColors.accentColor,
-      fontFamily: 'Poppins', //3
+      hoverColor: CustomColors.grey,
+      buttonColor: CustomColors.darkGrey,
+      fontFamily: FontNameDefault, //3
       textTheme: TextTheme(
         headline1: HeadingTextStyle,
         headline2: TitleTextStyle,
@@ -35,7 +38,6 @@ class CustomTheme with ChangeNotifier {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
-        buttonColor: CustomColors.darkGrey,
       ),
     );
   }
@@ -47,7 +49,7 @@ class CustomTheme with ChangeNotifier {
         primaryColorLight: CustomColors.darkBlueColor,
         secondaryHeaderColor: CustomColors.secondaryColor,
         accentColor: CustomColors.accentColor,
-        fontFamily: 'Mulish',
+        fontFamily: FontNameDefault,
         textTheme: TextTheme(
           headline1: HeadingTextStyle.copyWith(color: Colors.white),
           headline2: TitleTextStyle.copyWith(color: Colors.white),

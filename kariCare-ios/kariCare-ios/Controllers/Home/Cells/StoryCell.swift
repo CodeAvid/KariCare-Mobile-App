@@ -8,28 +8,33 @@
 import UIKit
 
 
-class StoryCell: UICollectionViewCell{
+class StoryCell: UICollectionViewCell, ComponentsShimmers{
     
-    private let liveBadgeView = LiveBagdeView()
+    private let liveBadgeView = LiveBadgeView()
     
-    private let storyImageView: UIImageView = {
+    var animationDuration: Double = 0.25
+    let cornerRadius: CGFloat = 18
+    
+    var shimmer: ShimmerLayer = ShimmerLayer()
+    
+    private lazy var storyImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = UIColor.systemGray5
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = cornerRadius
         imageView.clipsToBounds = true
         return imageView
     }()
     
    
     
-    private var userProfileImageView: UIImageView = {
+    private lazy var userProfileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = UIColor.systemGray5
         imageView.contentMode = .scaleAspectFill
         imageView.constrainWidth(constant: 36)
         imageView.constrainHeight(constant: 36)
-        imageView.layer.cornerRadius = 18
+        imageView.layer.cornerRadius = cornerRadius
         imageView.layer.borderWidth = 3
         imageView.layer.borderColor = (UIColor(named: Constants.Colors.peachColor) ?? .systemPink).cgColor
         imageView.clipsToBounds = true
@@ -62,6 +67,33 @@ class StoryCell: UICollectionViewCell{
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK:- delegate functions for collectionView
+    func hideViews() {
+        ViewAnimationFactory.makeEaseOutAnimation(duration: animationDuration, delay: 0) {
+            self.storyImageView.setOpacity(to: 0)
+            self.userProfileImageView.setOpacity(to: 0)
+            self.usernameLabel.setOpacity(to: 0)
+        }
+    }
+    
+    func showViews() {
+        self.storyImageView.setOpacity(to: 1)
+        self.userProfileImageView.setOpacity(to: 1)
+        self.usernameLabel.setOpacity(to: 10)
+    }
+    
+    func setShimmer() {
+        DispatchQueue.main.async { [unowned self] in
+            self.shimmer.removeFromSuperlayer()
+            self.shimmer = ShimmerLayer(for: self.storyImageView, cornerRadius: self.cornerRadius)
+            self.layer.addSublayer(self.shimmer)
+        }
+    }
+    
+    func removeShimmer() {
+        shimmer.removeFromSuperlayer()
+    }
+    
     func configureCell(with user: Photo){
         if let storyImage = user.urls?.full, let profileImageUrl =  user.user?.profileImage?.medium, let lastName = user.user?.lastName, let firstName = user.user?.firstName{
             storyImageView.sd_setImage(with: URL(string: storyImage))
@@ -69,6 +101,5 @@ class StoryCell: UICollectionViewCell{
             usernameLabel.text = "\(firstName) \(lastName)"
             usernameLabel.backgroundColor = .clear
         }
-
     }
 }

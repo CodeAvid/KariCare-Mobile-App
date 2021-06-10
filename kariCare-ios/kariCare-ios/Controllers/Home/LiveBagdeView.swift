@@ -1,5 +1,5 @@
 //
-//  LiveBagdeView.swift
+//  LiveBadgeView.swift
 //  kariCare-ios
 //
 //  Created by akhigbe benjamin on 30/05/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LiveBagdeView: UIView{
+class LiveBadgeView: UIView{
     
     static let reuseIdentifier = String(describing: self)
     
@@ -32,7 +32,7 @@ class LiveBagdeView: UIView{
         titleLabel.isHidden = true
         view.constrainWidth(constant: 30)
         view.constrainHeight(constant: 15)
-        view.layer.cornerRadius = 3
+        view.setCornerRadius(radius: 2)
         return view
     }()
     

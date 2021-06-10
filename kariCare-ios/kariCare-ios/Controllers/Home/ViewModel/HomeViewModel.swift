@@ -14,8 +14,7 @@ struct Pages {
 
 
 class HomeViewModel{
-    
-    
+
     let delegate: DataFetchedDelegate?
     var webService: ApiService
     var page2Photos = [Photo]()

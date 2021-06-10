@@ -1,6 +1,6 @@
 //
 //  ApiServices.swift
-//  kariCare-ios
+//  kariCare-iOS
 //
 //  Created by akhigbe benjamin on 29/05/2021.
 //

@@ -21,6 +21,7 @@ struct Constants {
     struct Colors {
         static var bgColor = "bgColor"
         static var greyColor = "greyColor"
+        static var darkGrayColor = "darkgrayColor"
         static var peachColor  = "peachColor"
     }
     
@@ -56,6 +57,7 @@ struct Constants {
     
     
     struct ProfileVc {
+        static var backIcon = "arrow.left"
         static var title = "My profile"
         static var name = "Anna Karenina"
         static var location = "University of Lagos \n Lagos, Nigeria"
@@ -65,5 +67,9 @@ struct Constants {
         static var defaulttotalPhotos = String(0)
         static var defaultNumberOfFollowers = String(146)
         static var defaultNumberOfPeopleFollowing = String(204)
+    }
+    
+    struct ShimmerLayer{
+        static var animationKeyPath = "locations"
     }
 }

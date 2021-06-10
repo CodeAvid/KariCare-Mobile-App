@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const ExtraLargeTextSize = 30.0;
 const LargeTextSize = 22.0;
-const MediumTextSize = 14.0;
+const MediumTextSize = 16.0;
 const SmallTextSize = 10.0;
 
 const String FontNameDefault = 'Poppins';
