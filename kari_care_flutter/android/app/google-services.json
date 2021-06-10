@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "675537607163",
+    "project_id": "kari-care-ios",
+    "storage_bucket": "kari-care-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675537607163:android:e5b08d015ecd785be0135e",
+        "android_client_info": {
+          "package_name": "com.example.kari_care_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675537607163-ipduhqadcnn37335vpdltc1vgq4e5dem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kari_care_flutter",
+            "certificate_hash": "e966f38ced946f5f046b6f2d67a83888cba0a797"
+          }
+        },
+        {
+          "client_id": "675537607163-la95m3t6lsm63elkc6fjqn8acc24915i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgEjFsz0rC_Sa4le6Xj-JIepkdgszCxys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675537607163-la95m3t6lsm63elkc6fjqn8acc24915i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "675537607163-d2hasr9dbcu2llo15e6jgndffsasfij2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cowry.kariCare-ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
