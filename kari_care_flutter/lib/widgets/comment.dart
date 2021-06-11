@@ -27,7 +27,7 @@ class _CommentState extends State<Comment> {
           children: [
             ProfileAvatar(
               imageProvider: CachedNetworkImageProvider(
-                  widget.photo.user.profileImage.small),
+                  widget.photo.user.profileImage.medium),
               radius: MediaQuery.of(context).size.width / 15,
               hasBoarder: true,
               boarderColor: HexColor(widget.photo.color),

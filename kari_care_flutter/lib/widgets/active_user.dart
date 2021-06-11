@@ -56,7 +56,7 @@ class ActiveUser extends StatelessWidget {
                               children: [
                                 ProfileAvatar(
                                   imageProvider: CachedNetworkImageProvider(
-                                    photo.user.profileImage.small,
+                                    photo.user.profileImage.medium,
                                   ),
                                   radius:
                                       MediaQuery.of(context).size.width / 25,

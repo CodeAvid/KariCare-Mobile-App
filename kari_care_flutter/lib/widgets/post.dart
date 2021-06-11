@@ -48,7 +48,7 @@ class Post extends StatelessWidget {
                           )
                         : ProfileAvatar(
                             imageProvider: CachedNetworkImageProvider(
-                                photo.user.profileImage.small),
+                                photo.user.profileImage.medium),
                             radius:
                                 (MediaQuery.of(context).size.width / 15).abs(),
                             hasBoarder: false,

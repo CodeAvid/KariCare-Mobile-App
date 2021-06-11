@@ -113,17 +113,17 @@ class User {
 
 class ProfileImage {
   ProfileImage({
-    this.small,
+    this.medium,
   });
 
-  final String small;
+  final String medium;
 
   factory ProfileImage.fromJson(Map<String, dynamic> json) => ProfileImage(
-        small: json["small"],
+        medium: json["medium"],
       );
 
   Map<String, dynamic> toJson() => {
-        "small": small,
+        "medium": medium,
       };
 }
 
