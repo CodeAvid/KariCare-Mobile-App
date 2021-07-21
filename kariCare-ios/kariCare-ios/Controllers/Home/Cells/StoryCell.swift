@@ -95,7 +95,7 @@ class StoryCell: UICollectionViewCell, ComponentsShimmers{
     }
     
     func configureCell(with user: Photo){
-        if let storyImage = user.urls?.full, let profileImageUrl =  user.user?.profileImage?.medium, let lastName = user.user?.lastName, let firstName = user.user?.firstName{
+        if let storyImage = user.urls?.small, let profileImageUrl =  user.user?.profileImage?.medium, let lastName = user.user?.lastName, let firstName = user.user?.firstName{
             storyImageView.sd_setImage(with: URL(string: storyImage))
             userProfileImageView.sd_setImage(with: URL(string: profileImageUrl))
             usernameLabel.text = "\(firstName) \(lastName)"

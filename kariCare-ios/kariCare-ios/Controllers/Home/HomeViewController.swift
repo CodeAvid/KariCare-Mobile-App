@@ -35,14 +35,41 @@ class HomeViewController: UIViewController {
     
     private var homeCollectionView: UICollectionView!
     
+    
+    private let GetStartedButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Get Started", for: .normal)
+        button.addTarget(self, action: #selector(handleGetStarted), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func handleGetStarted(_ sender: UIButton){
+        
+    }
+    
+    private let ImageviewTitle : UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.image =  UIImage(named: "")
+        imageView.setOpacity(to: 0.2)
+        imageView.setBorder(with: .blue, 2)
+        imageView.setCornerRadius(radius: 20)
+        return imageView
+    }()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
         configureCollectionView()
         applySnapshot(animatingDifferences: false)
+
     }
 }
 
+//UICollectionViewFlowDelegate
+//UICollectionViewDiffableDataSource
 
 //MARK:- Configure UICollectionView
 

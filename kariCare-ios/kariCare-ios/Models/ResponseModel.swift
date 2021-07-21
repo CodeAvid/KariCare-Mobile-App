@@ -62,6 +62,6 @@ struct ProfileImage: Codable {
 }
 
 struct Urls: Codable {
-    let full: String
+    let small: String
 }
 

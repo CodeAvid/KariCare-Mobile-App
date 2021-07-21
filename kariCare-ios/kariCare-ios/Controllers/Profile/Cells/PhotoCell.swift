@@ -26,7 +26,7 @@ class PhotoCell: UICollectionViewCell {
     
     var photo: Photo? {
       didSet {
-          if let imageUrl = photo?.urls?.full{
+          if let imageUrl = photo?.urls?.small{
               profileImage.sd_setImage(with: URL(string: imageUrl))
           }
       }

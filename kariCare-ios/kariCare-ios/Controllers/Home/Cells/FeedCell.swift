@@ -108,7 +108,7 @@ class FeedCell: UICollectionViewCell{
     
     
     func configureCell(with feed: Photo){
-        if let profileImageUrl = feed.user?.profileImage?.medium, let   firstName  = feed.user?.firstName, let lastName = feed.user?.lastName, let location = feed.user?.location, let feedURl = feed.urls?.full, let likes = feed.likes, let comments = feed.user?.totalLikes, let reply = feed.user?.totalCollections {
+        if let profileImageUrl = feed.user?.profileImage?.medium, let   firstName  = feed.user?.firstName, let lastName = feed.user?.lastName, let location = feed.user?.location, let feedURl = feed.urls?.small, let likes = feed.likes, let comments = feed.user?.totalLikes, let reply = feed.user?.totalCollections {
             userProfileImageView.sd_setImage(with: URL(string: profileImageUrl))
             usernameLabel.text = "\(firstName) \(lastName)"
             locationLabel.text = location

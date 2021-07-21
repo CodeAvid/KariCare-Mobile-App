@@ -30,7 +30,6 @@ class HomeViewModel{
     }
     
     private func getPages(){
-        
         dispatchGroup.enter()
         webService.getPhotos(for: PagesIndex.page2.rawValue) { [weak self] response in
             switch response{

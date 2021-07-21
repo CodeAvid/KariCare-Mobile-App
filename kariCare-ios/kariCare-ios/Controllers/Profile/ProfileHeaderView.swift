@@ -15,6 +15,12 @@ class ProfileHeaderView: UICollectionReusableView {
         let button = UIButton()
         let imageView = UIImageView(image: UIImage(systemName: Constants.ProfileVc.backIcon))
         button.setImage(imageView.image, for: .normal)
+        //Rotate
+        //Scale //increase and reduce
+        //Translate  // movement
+        let rotation = CGAffineTransform(rotationAngle: .pi / 2)
+        let scale = CGAffineTransform(scaleX: -1, y: 1)
+        button.transform = scale.concatenating(rotation)
         button.tintColor = UIColor(named: Constants.Colors.darkGrayColor)
         return button
     }()
